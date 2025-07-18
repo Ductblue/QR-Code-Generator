@@ -10,10 +10,10 @@
     <div class="box">
         <div class="qr-header">
             <h1>Generate QR Code</h1>
-            <input type="text" placeholder="Type text or URL">
+            <input type="text" placeholder="Type text or URL" id="qr-text">
             <div>
                 <label for="sizes">Select Size</label>
-                <select name="sizes" id="sizes">
+                <select  id="sizes">
                     <option value="100">100x100</option>
                     <option value="200">200x200</option>
                     <option value="300">300x300</option>
@@ -29,12 +29,13 @@
         </div>
         <div class="qr-body"></div>
         <div class="qr-footer">
-            <a href="">Generate</a>
-            <a href="">Download</a>
+            <a href="" id="generateBtn">Generate</a>
+            <a href="" id="downloadBtn" download="QR_Code.png">Download</a>
         </div>
     </div>
-    <button class="rainbow-button">Click Me</button>
+    <!-- <button class="rainbow-button">Click Me</button> -->
 
     <script src="qr.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 </body>
 </html>
